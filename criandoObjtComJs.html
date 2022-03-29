@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="app">
+
+        <div id="box"></div>
+    </div>
+
+
+
+
+    <script>
+        //criar um elemento link e armazena na variavel linkElelmentos
+        var linkElementos = document.createElement('a');
+        //pega a variavel seta valores do href pra ela
+        linkElementos.setAttribute('href', 'http://rocketseat.com.br');
+        //criar um elemento de texto
+        var textElementos = document.createTextNode('Acessar site da Rocketseat');
+        //adiciona o texto com filho dentro do link 
+        linkElementos.appendChild(textElementos);
+        //pega a div com o di app e adiciona a variavel
+        var contemElementos = document.querySelector('#app');
+        //adiciona o link com filho da div
+        contemElementos.appendChild(linkElementos);
+        elementoImput = document.querySelector('#nome');
+        //remove o imput que esta dentro do atributo contemElementos
+        // contemElementos.removeChild(elementoImput);
+
+        //criar uma estilização para div
+        var boxelemento = document.querySelector('div#box');
+        boxelemento.style.width = 100;
+        boxelemento.style.height = 100;
+        boxelemento.style.backgroundColor = '#f00';
+    </script>
+</body>
+
+</html>

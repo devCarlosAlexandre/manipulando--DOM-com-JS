@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="app">
+        <input type="text" name="nome" id="meunome">
+
+        <button class="botao">Adicionar</button>
+    </div>
+
+    <script>
+        //document.querySelector('div#app input#meunome'); traz o elemento atraves da navegação e indicação do id
+        //queryselector all traz todos os elementos
+        //document.querySelector('input[name = nome2]'); busca direto o input que tem o nome = nome2
+        // var inputElement = document.querySelectorAll('input');
+        var inputElement = document.querySelector('input[name= nome]')
+        var btnElement = document.querySelector('button.botao');
+
+        btnElement.onclick = function() {
+            var text = inputElement.value;
+            alert('Voce apertou o botão e essa é a sua mensagem: ' + text)
+
+        }
+    </script>
+</body>
+
+</html>
